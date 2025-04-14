@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: my-app-test
+      annotations:
+        force-update: "now"  # 🔁 аннотация для "вынужденного" обновления
     spec:
       containers:
       - name: my-app
