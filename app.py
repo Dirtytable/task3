@@ -1,5 +1,5 @@
-def get_message():
-    return "Hello, world!"
+import time
 
-if __name__ == '__main__':
-    print(get_message())
+print("Hello, world!")
+while True:
+    time.sleep(60)
