@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: my-app-prod
+      annotations:
+        force-update: "now" 
     spec:
       containers:
       - name: my-app
