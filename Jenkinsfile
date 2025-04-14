@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'python -m pytest'
+               sh 'docker run --rm my-app:latest python -m pytest'
             }
         }
         stage('Deploy to Test') {
