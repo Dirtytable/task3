@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app-prod
+  name: my-app-test
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: my-app-prod
+      app: my-app-test
   template:
     metadata:
       labels:
-        app: my-app-prod
+        app: my-app-test
     spec:
       containers:
       - name: my-app
@@ -18,4 +18,3 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
-
